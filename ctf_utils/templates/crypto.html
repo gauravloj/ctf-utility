@@ -1,0 +1,17 @@
+<form method="post">
+
+  <input type="text" id="urltext" name="url" placeholder="Enter the url to decode">
+
+  <input type="submit" value="Decode">
+
+
+  <p>Decoded URL: <span id="encodedurl"></span></p>
+</form>
+
+<script>
+  document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var url = document.getElementById('urltext').value;
+    document.getElementById('encodedurl').appendChild(document.createTextNode(encodeURIComponent(url)));
+  });
+</script>

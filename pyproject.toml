@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ctf-utility"
+version = "0.1.0"
+description = "List of CTF utilities"
+authors = ["Gaurav Vijayvargia <6872672+gauravloj@users.noreply.github.com>", "Apoorva Ranade <56822679+apoorvaran@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
